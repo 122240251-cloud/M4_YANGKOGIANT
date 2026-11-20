@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Katalog Produk - 5 Pilihan Rasa Yangko Giant Yogyakarta</title>
+  <meta name="description" content="Jelajahi 5 varian rasa kue yangko tradisional dari Yangko Giant: Original, Coklat, Durian, Pandan, dan Strawberry.">
+  <meta name="keywords" content="Katalog Yangko Giant, Rasa Yangko Jogja, Yangko Original, Yangko Pandan, Yangko Coklat, Yangko Durian, Yangko Strawberry">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Yangko Giant Modern System CSS -->
+  <link href="assets/css/yangko-modern.css" rel="stylesheet">
+
+  <style>
+    /* Tambahan kecil agar nama rasa muncul rapi di bawah setiap lingkaran */
+    .yk-swatches {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .swatch-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .swatch-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #5c473c;
+    }
+  </style>
+</head>
+
+<body class="category-page">
+
+  <!-- HEADER -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <div class="logo d-flex align-items-center">
+  <img src="assets/img/logo.png" alt="Logo Yangko Giant">
+</div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="category.html"class="active">Produk</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- PAGE HERO -->
+    <section class="section py-5 text-center position-relative overflow-hidden" style="background: linear-gradient(135deg, #f7f1e9 0%, #ede1d1 100%); border-bottom: 1px solid var(--yk-border);">
+      <div class="container py-4" data-aos="fade-up">
+        
+        <h1 class="yk-serif display-4 fw-bold mb-3" style="color: var(--yk-primary-dark);">Katalog Interaktif Yangko Giant</h1>
+        <p class="lead mx-auto text-muted" style="max-width: 680px;">
+          Sentuh salah satu dari 5 palet warna rasa di bawah untuk melihat sajian, karakter aroma, serta rincian bahan baku setiap varian.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: KATALOG INTERAKTIF 5 RASA -->
+    <section class="yangko-catalog-wrapper">
+      <div class="container">
+        
+        <div class="yk-catalog-box" data-aos="fade-up">
+          <div class="row align-items-center g-5">
+
+            <!-- KOLOM KIRI: Piring & 5 Lingkaran Rasa -->
+            <div class="col-lg-6">
+              <div class="yk-product-display">
+                
+                <h3 class="yk-serif h2 mb-2" id="title-left" style="color: var(--yk-primary-dark);">Yangko Original</h3>
+                
+
+                <div class="yk-plate-wrapper">
+                  <img id="main-product-img" class="product-img" src="assets/img/yangko.jpg" alt="Varian Yangko">
+                </div>
+
+                <div class="fw-bold mb-3 small text-uppercase" style="letter-spacing: 1px; color: var(--yk-primary);">
+                  Sentuh Lingkaran Rasa di Bawah:
+                </div>
+                <div class="yk-swatches" id="swatch-container"></div>
+              </div>
+            </div>
+
+            <!-- KOLOM KANAN: Deskripsi & Tabel Spesifikasi -->
+            <div class="col-lg-6">
+              <div class="yk-product-info">
+                <span class="small text-uppercase fw-bold d-block mb-2" style="letter-spacing: 1.5px; color: var(--yk-primary);">
+                  Detail Varian Terpilih
+                </span>
+
+                <h2 class="yk-serif h2 mb-3" id="title-right" style="color: var(--yk-primary-dark);">Yangko Original</h2>
+
+                <p class="product-desc" id="product-desc" style="color: #5c473c; font-size: 1.05rem; line-height: 1.75;">
+                  Varian legendaris dengan cita rasa original tempo dulu. Manis gula pasir murni dan gurihnya tepung ketan sangrai terasa paling otentik khas oleh-oleh tradisional Yogyakarta.
+                </p>
+
+                <!-- Tabel Spesifikasi Detail -->
+                <table class="yk-specs-table">
+                  <tbody>
+                    
+                    <tr>
+                      <td>Bahan Baku Utama</td>
+                      <td id="spec-ingredients">Beras ketan pilihan, gula pasir murni, vanili, tepung ketan sangrai.</td>
+                    </tr>
+                    <tr>
+                      <td>Isi Kemasan</td>
+                      <td id="spec-netto">Isi 20 - 30 potong per kotak (kemasan higienis)</td>
+                    </tr>
+                    <tr>
+                      <td>Daya Simpan</td>
+                      <td id="spec-durability">5 - 7 hari (suhu ruang, tanpa pengawet)</td>
+                    </tr>
+                    <tr>
+                      <td>Karakter Rasa</td>
+                      <td id="spec-character">Kenyal lembut, gurih ketan sangrai, manis klasik</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: GRID SEMUA 5 VARIAN PRODUK -->
+    <!-- SECTION: VIDEO PROSES PEMBUATAN YANGKO -->
+    <section class="section py-5" style="background: #f7f1e9;">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+     
+          <h2 class="yk-serif h2">Mengintip Proses di Balik Kelezatan Yangko</h2>
+          <p class="text-muted mx-auto" style="max-width: 650px;">
+            Lihat bagaimana bahan pilihan diolah menjadi yangko yang lembut dan nikmat.
+          </p>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-9">
+            <div class="ratio ratio-16x9 shadow-lg" style="border-radius: 16px; overflow: hidden; border: 4px solid #ffffff; background: #000;">
+              <iframe 
+                src="https://www.youtube.com/embed/JfN5R0_zXKc?rel=0" 
+                title="Proses Pembuatan Yangko Giant" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- SECTION: FAQ SEPUTAR KUE YANGKO -->
+    <section class="section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          
+          <h2 class="yk-serif h2">Pertanyaan Umum (FAQ)</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="accordion" id="faqAccordion">
+
+              <div class="accordion-item mb-3 border rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="faq1">
+                  <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                    Berapa lama daya tahan kue Yangko Giant?
+                  </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted">
+                    Karena dibuat secara alami tanpa pengawet buatan, kue Yangko Giant bertahan <strong>5 sampai 7 hari</strong> pada suhu ruangan normal. Bila disimpan dalam lemari pendingin, daya tahan dapat mencapai 2 minggu (cukup diamkan sejenak di suhu ruang sebelum dinikmati agar tekstur kembali kenyal lembut).
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-3 border rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="faq2">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                    Apakah produk selalu baru saat dikirim?
+                  </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted">
+                    Ya, betul. Seluruh produksi Yangko Giant menggunakan sistem <strong>Make to Order</strong>. Produksi dijalankan sesuai kuota pesanan yang masuk dari toko mitra atau pemesan, sehingga kualitas dan kesegaran terjamin maksimal.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border rounded-3 overflow-hidden shadow-sm">
+                <h2 class="accordion-header" id="faq3">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                    Bagaimana cara memesan untuk oleh-oleh atau toko?
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted">
+                    Anda dapat memesan melalui halaman Kontak atau menghubungi kami via WhatsApp. Kami melayani pesanan partai untuk toko oleh-oleh di Yogyakarta maupun pesanan pribadi wisatawan.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+<footer id="footer" class="footer position-relative">
+  <div class="container">
+    <div class="row gy-5 justify-content-between align-items-start">
+      
+      <!-- KOLOM KIRI: Brand & Sosmed -->
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand mb-3">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="h4 text-white font-weight-bold mb-0">Yangko Giant</span>
+          </div>
+          <p class="small text-white" style="line-height: 1.6;">
+            Menghadirkan kue yangko tradisional khas Yogyakarta sejak 2012 dengan komitmen kualitas beras ketan pilihan, tekstur kenyal lembut, dan resep warisan keluarga yang higienis.
+          </p>
+        </div>
+        <div class="social-links mt-3">
+          <a href="https://www.instagram.com/giantyangko" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@yangko.giant" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a href="https://wa.me/6287739305772?text=Halo%20Yangko%20Giant,%20saya%20mau%20tanya%20atau%20pesan%20produknya." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- KOLOM TENGAH: Google Maps -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="text-white mb-3">Lokasi Kami</h5>
+        <div style="border-radius: 12px; overflow: hidden; border: 2px solid rgba(255,255,255,0.15); height: 190px;">
+          <iframe 
+            src="https://www.google.com/maps?q=Yangko+Giant+Yogyakarta&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- KOLOM KANAN: Pusat Produksi -->
+      <div class="col-lg-3 col-md-6">
+        <h5>Pusat Produksi</h5>
+        <p class="small mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Yogyakarta, D.I. Yogyakarta, Indonesia</p>
+        <p class="small mb-2"><i class="bi bi-clock-fill text-warning me-2"></i> Jam Produksi: 08.00 - 17.00 WIB</p>
+        <p class="small mb-3"><i class="bi bi-truck text-warning me-2"></i> Sistem Pengiriman: <em>Make to Order</em></p>
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container text-center">
+      <p class="mb-0">© 2012 - 2026 <strong>Yangko Giant</strong>. Seluruh Hak Cipta Dilindungi.</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Skrip Interaktif 5 Rasa Yangko Giant -->
+  <script>
+    const variantsList = [
+      {
+        shortName: 'Original',
+        name: 'Yangko Original',
+                code: 'PR01',
+        tag: 'Resep Asli 2012',
+        tagColor: '#784c17',
+        tagBg: '#fbf0df',
+        outerColor: '#f7edd7',
+        innerColor: '#ccb18b',
+        image: 'assets/img/rasa original.png',
+        desc: 'Varian legendaris dengan cita rasa original tempo dulu. Manis gula pasir murni dan gurihnya tepung ketan sangrai terasa paling otentik khas oleh-oleh tradisional Yogyakarta.',
+        ingredients: 'Beras ketan pilihan, gula pasir murni, vanili, tepung ketan sangrai.',
+        netto: 'Isi 20 - 30 potong per kotak (kemasan higienis)',
+        durability: '5 - 7 hari (suhu ruang, tanpa pengawet)',
+        character: 'Kenyal lembut, gurih ketan sangrai, manis klasik'
+      },
+      {
+        shortName: 'Coklat',
+        name: 'Yangko Coklat Legit',
+        subtitle: 'FAVORIT KELUARGA',
+        code: 'PR02',
+        tag: 'Disukai Semua Usia',
+        tagColor: '#532918',
+        tagBg: '#eddcd3',
+        outerColor: '#7c5744',
+        innerColor: '#442b1f',
+        image: 'assets/img/rasa coklat.png',
+        desc: 'Perpaduan sempurna antara kue ketan tradisional kenyal dengan kelezatan coklat pekat yang legit dan tidak bikin enek. Sangat disukai oleh anak-anak maupun orang dewasa.',
+        ingredients: 'Beras ketan pilihan, gula pasir murni, pasta coklat pilihan, tepung ketan sangrai.',
+        netto: 'Isi 20 - 30 potong per kotak (kemasan higienis)',
+        durability: '5 - 7 hari (suhu ruang, tanpa pengawet)',
+        character: 'Manis coklat mantap, kenyal legit, aroma kakao'
+      },
+      {
+        shortName: 'Durian',
+        name: 'Yangko Durian Nusantara',
+        subtitle: 'AROMA KHAS',
+        code: 'PR03',
+        tag: 'Aroma Khas Durian',
+        tagColor: '#7d5910',
+        tagBg: '#fdf0cd',
+        outerColor: '#ecc469',
+        innerColor: '#a97d19',
+        image: 'assets/img/rasa durian.png',
+        desc: 'Sajian istimewa bagi penggemar raja buah. Menghadirkan aroma semerbak durian nusantara yang khas dan berpadu harmonis dengan kelembutan beras ketan murni.',
+        ingredients: 'Beras ketan pilihan, gula pasir murni, pasta durian istimewa, tepung ketan sangrai.',
+        netto: 'Isi 20 - 30 potong per kotak (kemasan higienis)',
+        durability: '5 - 7 hari (suhu ruang, tanpa pengawet)',
+        character: 'Aroma durian semerbak, manis legit khas, lembut kenyal'
+      },
+      {
+        shortName: 'Pandan',
+        name: 'Yangko Pandan Wangi',
+        subtitle: 'VARIAN FAVORIT',
+        code: 'PR04',
+        tag: 'Paling Diminati',
+        tagColor: '#2e5c2b',
+        tagBg: '#e1efe0',
+        outerColor: '#84b579',
+        innerColor: '#437039',
+        image: 'assets/img/rasa pandan.png',
+        desc: 'Yangko dengan semerbak aroma harum daun pandan alami yang segar. Memiliki tekstur kenyal lembut khas beras ketan pilihan dengan balutan tepung sangrai gurih dan manis yang pas di lidah.',
+        ingredients: 'Beras ketan pilihan, gula pasir murni, pasta pandan alami, tepung ketan sangrai.',
+        netto: 'Isi 20 - 30 potong per kotak (kemasan higienis)',
+        durability: '5 - 7 hari (suhu ruang, tanpa pengawet)',
+        character: 'Kenyal lembut, harum pandan alami, manis legit seimbang'
+      },
+      {
+        shortName: 'Strawberry',
+        name: 'Yangko Strawberry Segar',
+        subtitle: 'VARIAN BUAH',
+        code: 'PR05',
+        tag: 'Manis Segar',
+        tagColor: '#8c253d',
+        tagBg: '#fbe0e5',
+        outerColor: '#e8879b',
+        innerColor: '#b82a47',
+        image: 'assets/img/rasa strawberry.webp',
+        desc: 'Kue yangko berwarna merah muda ceria dengan aroma buah strawberry segar menggugah selera. Memberikan sensasi kesegaran rasa manis-asam ringan dalam tiap gigitan.',
+        ingredients: 'Beras ketan pilihan, gula pasir murni, pasta strawberry segar, tepung ketan sangrai.',
+        netto: 'Isi 20 - 30 potong per kotak (kemasan higienis)',
+        durability: '5 - 7 hari (suhu ruang, tanpa pengawet)',
+        character: 'Segar beraroma buah, manis asam pas, kenyal elastis'
+      }
+    ];
+
+    let activeVariantIndex = 0;
+
+    const swatchContainer = document.getElementById('swatch-container');
+    const categorySubtitle = document.getElementById('category-subtitle');
+    const titleLeft = document.getElementById('title-left');
+    const titleRight = document.getElementById('title-right');
+    const productDesc = document.getElementById('product-desc');
+    const badgeTag = document.getElementById('badge-tag');
+    const mainProductImg = document.getElementById('main-product-img');
+
+    const specCode = document.getElementById('spec-code');
+    const specIngredients = document.getElementById('spec-ingredients');
+    const specNetto = document.getElementById('spec-netto');
+    const specDurability = document.getElementById('spec-durability');
+    const specCharacter = document.getElementById('spec-character');
+
+    function renderSwatches() {
+      if (!swatchContainer) return;
+      swatchContainer.innerHTML = '';
+
+      variantsList.forEach((variant, idx) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'swatch-wrapper';
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = `swatch-btn ${idx === activeVariantIndex ? 'active' : ''}`;
+        btn.title = variant.name;
+
+        const inner = document.createElement('div');
+        inner.className = 'swatch-inner';
+        inner.style.backgroundColor = variant.outerColor;
+
+        const core = document.createElement('div');
+        core.className = 'swatch-core';
+        core.style.backgroundColor = variant.innerColor;
+
+        inner.appendChild(core);
+        btn.appendChild(inner);
+
+        btn.onclick = () => {
+          activeVariantIndex = idx;
+          renderSwatches();
+          updateProductView();
+        };
+
+        const label = document.createElement('span');
+        label.className = 'swatch-label';
+        label.textContent = variant.shortName;
+
+        wrapper.appendChild(btn);
+        wrapper.appendChild(label);
+        swatchContainer.appendChild(wrapper);
+      });
+    }
+
+    function updateProductView() {
+      const variant = variantsList[activeVariantIndex];
+
+      if (categorySubtitle) categorySubtitle.textContent = variant.subtitle;
+      if (titleLeft) titleLeft.textContent = variant.name;
+      if (titleRight) titleRight.textContent = variant.name;
+      if (productDesc) productDesc.textContent = variant.desc;
+
+      if (badgeTag) {
+        badgeTag.textContent = variant.tag;
+        badgeTag.style.color = variant.tagColor;
+        badgeTag.style.backgroundColor = variant.tagBg;
+      }
+
+      if (specCode) specCode.textContent = variant.code;
+      if (specIngredients) specIngredients.textContent = variant.ingredients;
+      if (specNetto) specNetto.textContent = variant.netto;
+      if (specDurability) specDurability.textContent = variant.durability;
+      if (specCharacter) specCharacter.textContent = variant.character;
+
+      if (mainProductImg) {
+        mainProductImg.style.opacity = '0.3';
+        mainProductImg.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          mainProductImg.src = variant.image;
+          mainProductImg.alt = variant.name;
+          mainProductImg.style.opacity = '1';
+          mainProductImg.style.transform = 'scale(1)';
+        }, 150);
+      }
+    }
+
+    // Inisialisasi 5 lingkaran rasa saat halaman dibuka
+    renderSwatches();
+    updateProductView();
+  </script>
+
+</body>
+</html>
